@@ -4,7 +4,8 @@
   "description": "A Node.js wrapper for Google Maps Distance Matrix API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd ./node_modules/qs-google-signature && npm install && npm run build"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,7 @@
   "homepage": "https://github.com/ecteodoro/google-distance-matrix",
   "dependencies": {
     "debug": "^2.1.0",
-    "qs-google-signature": "^1.2.0",
+    "qs-google-signature": "https://github.com/hdrodel/qs-google-signature.git",
     "request": "^2.36.0"
   }
 }
